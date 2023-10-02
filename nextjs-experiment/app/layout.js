@@ -14,20 +14,6 @@ export default function RootLayout({ children }) {
       
 
       <body className={`${inter.className}`}>
-      <nav>
-        <h1>LOGO</h1>
-          <ul>
-            <li>
-              <a href='#'>About NAV</a>
-            </li>
-
-            <li>
-              <a href='#'>Extra</a>
-            </li>
-          </ul>
-        
-      </nav>
-        
         
         {children}</body>
     </html>
