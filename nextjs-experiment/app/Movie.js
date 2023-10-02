@@ -5,10 +5,10 @@ function Movie(props) {
     const imagePath= "https://image.tmdb.org/t/p/original"
     console.log(props.poster_path)
   return (
-    <div key={props.id} className='bg-red-100 p-3 rounded-md'>
-        <h1 className='text-black'>{props.title}</h1>
+    <div key={props.id} className='bg-red-50 p-3 rounded-md'>
+        <h1 className='text-black font-bold'>{props.title}</h1>
         <h2 className='text-black'>{props.release_date}</h2>
-        <Link href={`/asd`}>
+        <Link href={`/${props.id}`}>
             <Image src={imagePath + props.poster_path} width={800} height={800} alt={props.title}/>
         </Link>
     </div>
