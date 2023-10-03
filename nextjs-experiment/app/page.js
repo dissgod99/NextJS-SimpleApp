@@ -9,7 +9,6 @@ export default async function Home() {
   console.log(res.results.length)
   return (
     <main>
-      <h1 className='text-lg py-2 m-4 font-semibold text-red-800'>Hello everyone</h1>
       <div className='grid gap-10 grid-cols-fluid p-[5%]'>
       
         {

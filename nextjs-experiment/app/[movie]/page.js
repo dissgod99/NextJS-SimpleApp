@@ -11,17 +11,26 @@ async function MovieDetail({params}) {
     console.log(res)
     console.log(Object.keys(res))
   return (
-    <div>
-        <div>
-            <h2 className='text-2xl'>{res.title}</h2>
-            <h2>Date of Release: {res.release_date}</h2>
-            <h2>Popularity: {res.popularity}</h2>
-            <h2>Runtime: {res.runtime}</h2>
-            <h2>Status: {res.status}</h2>
-            <Image 
-            src={imagePath + res.backdrop_path} width={800} height={800}
-            />
-            <h2> Homepage: <Link className='text-orange-900' href={res.homepage}> CLICK HERE </Link></h2>
+    <div className='flex justify-center items-center h-screen bg-violet-100 w-screen '>
+        <div className='text-black flex flex-col items-center h-screen w-screen text-center'>
+            <h2 className='my-5 text-3xl font-bold text-gray-800 mb-4'>{res.title}</h2>
+
+            <div className='mx-auto'>
+                <Image className='rounded-md '
+                src={imagePath + res.backdrop_path} width={800} height={800}
+                />
+            </div>
+
+            <div className='flex justify-center items-center space-x-6'>
+              <div></div>
+            <h2 className='text-lg my-2'> <span className='font-bold'>Date of Release:</span> {res.release_date}</h2>
+            <h2 className='text-lg my-2'> <span className='font-bold'>Popularity:</span> {res.popularity}</h2>
+            <h2 className='text-lg my-2'><span className='font-bold'>Runtime:</span> {res.runtime}</h2>
+            <h2 className='text-lg my-2'><span className='font-bold'>Status:</span> {res.status}</h2>
+            </div>
+            
+            <h2 className='text-lg my-2 my-3 w-8/12'><span className='font-bold'>Overview:</span> {res.overview}</h2>
+            <h2 className='text-lg my-2 my-5 font-bold'> Homepage: <Link className='text-orange-900 font-bold' href={res.homepage}> CLICK HERE </Link></h2>
         </div>
     </div>
   )
