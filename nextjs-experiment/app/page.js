@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Movie from './Movie'
+import './globals.css';
 
 "https://api.themoviedb.org/3/movie/popular?api_key=API_KEY"
 export default async function Home() {

@@ -25,3 +25,16 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* Define the hover effect */
+.hover-effect:hover {
+  /* Add your desired styles for the hover effect here */
+  /* For example, change the background color */
+  background-color: #f0f0f0; /* Change to your preferred color */
+  /* You can add more styles as needed */
+}
+
+.hover-scale:hover {
+  transform: scale(1.05); /* Scale the element up by 5% when hovered */
+  transition: transform 0.2s ease; /* Add a smooth transition effect */
+}
