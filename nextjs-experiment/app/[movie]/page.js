@@ -22,7 +22,7 @@ async function MovieDetail({params}) {
             </div>
 
             <div className='flex justify-center items-center space-x-6'>
-              <div></div>
+              <div></div> 
             <h2 className='text-lg my-2'> <span className='font-bold'>Date of Release:</span> {res.release_date}</h2>
             <h2 className='text-lg my-2'> <span className='font-bold'>Popularity:</span> {res.popularity}</h2>
             <h2 className='text-lg my-2'><span className='font-bold'>Runtime:</span> {res.runtime}</h2>
