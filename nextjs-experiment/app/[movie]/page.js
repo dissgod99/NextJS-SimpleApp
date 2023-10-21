@@ -11,8 +11,8 @@ async function MovieDetail({params}) {
     console.log(res)
     console.log(Object.keys(res))
   return (
-    <div className='flex justify-center items-center h-screen bg-violet-100 w-screen '>
-        <div className='text-black flex flex-col items-center h-screen w-screen text-center'>
+    <div className='flex justify-center items-center h-screen bg-gray-200 w-full '>
+        <div className='text-black flex flex-col items-center h-full w-full text-center'>
             <h2 className='my-5 text-3xl font-bold text-gray-800 mb-4'>{res.title}</h2>
 
             <div className='mx-auto'>

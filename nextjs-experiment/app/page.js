@@ -10,7 +10,7 @@ export default async function Home() {
   console.log(res.results.length)
   return (
     <main>
-      <div className='grid gap-10 grid-cols-fluid p-[5%]'>
+      <div className='grid gap-10 grid-cols-fluid p-[5%] bg-gray-900'>
       
         {
           res.results.map((movie) => (
