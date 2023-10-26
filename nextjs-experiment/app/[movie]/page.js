@@ -3,6 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const imagePath= "https://image.tmdb.org/t/p/original"
+
+
+
 async function MovieDetail({params}) {
     const {movie} = params
     console.log(movie)
@@ -27,6 +30,14 @@ async function MovieDetail({params}) {
             <h2 className='text-lg my-2'> <span className='font-bold'>Popularity:</span> {res.popularity}</h2>
             <h2 className='text-lg my-2'><span className='font-bold'>Runtime:</span> {res.runtime}</h2>
             <h2 className='text-lg my-2'><span className='font-bold'>Status:</span> {res.status}</h2>
+            </div>
+            
+            <div className='flex space-x-10'>
+            <span className='font-bold'>Languages: </span> 
+              {res.spoken_languages.map((infos) => {
+                return <div key={infos.iso_639_1}>{infos.english_name}</div>
+              })}
+
             </div>
             
             <h2 className='text-lg my-2 my-3 w-8/12'><span className='font-bold'>Overview:</span> {res.overview}</h2>
